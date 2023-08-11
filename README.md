@@ -8,4 +8,5 @@
 
 
 ![image](https://github.com/ProbablyXS/digitlight/assets/99107085/6d9e2cec-610d-48aa-9819-6f010b545cdf)
-![image](https://github.com/ProbablyXS/digitlight/assets/99107085/9e4e7660-88fd-42b8-b239-4871c345f7dd)
+![image](https://github.com/ProbablyXS/digitlight/assets/99107085/14ca1f00-47fd-498e-9d79-2f69c7adb7be)
+
