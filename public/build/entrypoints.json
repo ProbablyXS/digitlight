@@ -1,0 +1,70 @@
+{
+  "entrypoints": {
+    "js/app": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors-node_modules_mui_icons-material_AddBox_js-node_modules_mui_icons-material_Close_js-no-47bfde.js",
+        "/build/js/app.js"
+      ],
+      "css": [
+        "/build/js/app.css"
+      ]
+    },
+    "css/login": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/css/login.css"
+      ]
+    },
+    "css/accueil": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/css/accueil.css"
+      ]
+    },
+    "css/materiel": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/css/materiel.css"
+      ]
+    },
+    "css/global": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/css/global.css"
+      ]
+    },
+    "css/header": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/css/header.css"
+      ]
+    },
+    "css/navbar": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/css/navbar.css"
+      ]
+    },
+    "css/itemStats": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/css/itemStats.css"
+      ]
+    }
+  }
+}

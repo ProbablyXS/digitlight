@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}DigitLight - Connexion{% endblock %}
+
+		{% block stylesheets %}
+			{{ encore_entry_link_tags('css/global') }}
+			{{ encore_entry_link_tags('css/login') }}
+		{% endblock %}
+
+{% block body %}
+
+	<div {{ react_component('login', {'csrf_token': csrf_token('authenticate'), 'last_username': last_username} ) }}></div>
+
+{% endblock %}

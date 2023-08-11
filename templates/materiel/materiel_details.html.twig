@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}DigitLight -
+	{{item}}
+{% endblock %}
+
+{% block stylesheets %}
+	{{ encore_entry_link_tags('css/global') }}
+	{{ encore_entry_link_tags('css/materiel') }}
+	{{ encore_entry_link_tags('css/header') }}
+	{{ encore_entry_link_tags('css/navbar') }}
+{% endblock %}
+
+{% block body %}
+	<div {{ react_component('materiel/materiel_details', {'appUserLogin': app.user.login, 'appUserRole': app.user.roles, 'appUserCat': app.user.categoryid, 'cat': page, 'item': item } ) }}></div>
+{% endblock %}

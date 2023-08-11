@@ -1,0 +1,55 @@
+.statsItems {
+  height: 0px;
+  color: #00000094;
+  margin-top: 38px;
+  margin-left: 14px;
+  margin-bottom: 21px;
+  font-weight: bold;
+  position: relative;
+}
+
+.statsItems span {
+  margin: 20px;
+}
+
+.statsItemsInfo {
+  display: contents;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+
+  .statsItems {
+    font-size: 15px;
+  }
+
+  .statsItems span {
+    margin: 13px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+  .statsItems {
+    font-size: min(max(13px, 3vw), 20px);
+    height: 0px;
+    color: #00000094;
+    margin-top: 51px;
+    margin-bottom: 3px;
+    display: inline-table;
+    font-weight: bold;
+    position: relative;
+  }
+
+  .statsItemsInfo {
+    display: block;
+    white-space: nowrap;
+  }
+
+}

@@ -1,0 +1,91 @@
+:root {
+  --defaut-bg-color: #dcd9d9d7;
+  --defaut-header-color: #ff6769;
+}
+
+#menu- {
+  width: 10% !important;
+  height: 13% !important;
+}
+
+.Modal {
+  opacity: '0';
+  transition: 'opacity 1s ease 0s';
+}
+
+#tooltip {
+  width: auto !important;
+  height: 20px !important;
+  left: -5px !important;
+  position: fixed !important;
+}
+
+.alertPopUp {
+  z-index: 9999;
+  position: fixed;
+  height: 46px !important;
+  width: auto;
+  left: 0;
+  bottom: 0;
+}
+
+.MuiAlert-icon {
+  width: auto;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: white;
+  padding-right: 0 !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#main {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* CUSTOM SCROLLBAR */
+
+section::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 8px;
+  background: #0000;
+}
+
+section::-webkit-scrollbar-thumb {
+  background: #a9a9a978;
+}
+
+section::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Hide scrollbar x for breadcrumb */
+ul::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar x,y for leftnav */
+div::-webkit-scrollbar {
+  display: none;
+}
+
+/* FOR FIREFOX ONLY */
+section {
+  scrollbar-width: thin;
+  scrollbar-color: #a9a9a978 #0000;
+}
+
+/* CUSTOM SCROLLBAR END */

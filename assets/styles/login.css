@@ -1,0 +1,264 @@
+/* Original */
+.main {
+  display: flex;
+  min-height: 437px;
+  background-size: 170%;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: color-burn;
+  background-repeat: repeat-x;
+  animation: animatedBackground 60s linear infinite alternate;
+}
+
+.leftFormControl {
+  position: relative;
+  display: grid;
+  align-self: center;
+  overflow: hidden;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 10%;
+  justify-items: center;
+}
+
+.leftFormControl img {
+  width: 30%;
+  padding-bottom: -7px;
+  transition: .6s ease-in-out;
+  filter: brightness(0) invert(1);
+  width: 189px;
+  transition: opacity 60s ease-in-out;
+
+}
+
+.panelLeft {
+  position: relative;
+  box-shadow: 0px 0px 20px 20px #0000001a;
+  background-color: #eb5f61a1;
+  background-blend-mode: color-burn;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.leftForm {
+  position: relative;
+  box-shadow: 0px 0px 20px 20px #00000014;
+  background-color: #ff6769d6;
+  width: 72%;
+  height: 88%;
+  min-height: 353px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.leftForm h1 {
+  color: white;
+}
+
+.leftForm h3 {
+  font-weight: normal;
+  font-family: 'Open Sans';
+  padding: 20px;
+}
+
+.rightForm {
+  display: flex;
+  background-color: #ffffffd7;
+  width: 88%;
+  height: 88%;
+  min-height: 353px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightForm a {
+  text-align: center;
+  font-weight: bold;
+  font-style: airal;
+}
+
+.rightForm form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: auto;
+  justify-content: center;
+  width: 31%;
+  height: 40%;
+  align-items: center;
+}
+
+.rightForm form img {
+  width: 70%;
+}
+
+.rightForm form label {
+  color: #000000ad !important;
+}
+
+.rightForm form div::before {
+  border-bottom: 2px solid rgba(139, 139, 139, 0.35) !important;
+}
+
+.rightForm form div::after {
+  border-bottom: 2px solid #ffffff5c !important;
+}
+
+.rightForm form input {
+  color: rgb(0, 0, 0) !important;
+}
+
+.rightForm form Button {
+  font-weight: bold;
+  font-style: airal;
+  margin: 32px;
+  height: 44px;
+  color: white !important;
+  border-color: #e25e60 !important;
+  background-color: #e25e60 !important;
+  border-radius: 10px !important;
+  border: 5px solid rgb(0 0 0 / 50%);
+}
+
+.rightForm form Button:hover {
+  border: 5px solid #ffffff0b !important;
+  background-color: #e25e60d4 !important;
+}
+
+.panelRight {
+  width: 227%;
+  display: flex;
+  box-shadow: 0px 0px 20px 20px #0000001a;
+  background-color: var(--defaut-bg-color);
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.panelRightTitle {
+  text-align: center;
+}
+
+.panelRightTitle h3 {
+  font-family: "Open Sans";
+  color: rgba(0, 0, 0, 0.66);
+  font-weight: bold;
+}
+
+.panelRightControl {
+  color: rgb(0 0 0);
+  display: grid;
+  height: 45px;
+  width: 100%;
+  justify-content: center;
+  align-items: start;
+  align-content: center;
+  border-bottom-right-radius: 10px;
+  justify-items: center;
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+
+  .main {
+    background-size: cover;
+  }
+
+  .leftForm {
+    width: 100%;
+    height: 100%;
+  }
+
+  .panelRight {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .panelRightTitle {
+    width: 140%;
+  }
+
+  .rightForm {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .rightForm form {
+    width: 50%;
+    height: unset;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+  .main {
+    padding: none;
+    min-height: 843px;
+    flex-direction: column;
+    background-size: cover;
+    justify-content: unset;
+    background-repeat: no-repeat;
+  }
+
+  .leftForm {
+    position: relative;
+    box-shadow: 0px 0px 20px 20px #0000000a;
+    width: 100%;
+    height: 100%;
+  }
+
+  .panelLeft {
+    height: auto;
+  }
+
+  .panelRight {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .panelRightTitle {
+    margin: 4%;
+  }
+
+  .rightForm {
+    width: 100%;
+    height: 100%;
+  }
+
+  .rightForm form {
+    width: 60%;
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  }
+
+  0%,
+  100% {
+    background-image: url("../images/bg.jpeg");
+  }
+
+  50% {
+    background-image: url("../images/bg2.jpg");
+  }
+}

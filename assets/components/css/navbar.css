@@ -1,0 +1,169 @@
+.leftNav {
+  position: fixed;
+  box-shadow: 0px 0px 20px 20px #00000014;
+  background-color: #333333;
+  width: 213px;
+  display: flex;
+  left: 0;
+  overflow: auto;
+  scrollbar-width: none;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: hidden;
+}
+
+.leftNav img {
+  filter: brightness(0) invert(1);
+  padding: 16px;
+  height: auto;
+  width: 89%;
+  margin-bottom: 71px;
+  text-align: center;
+}
+
+.leftNav a {
+  text-decoration: unset !important;
+  text-decoration-color: unset !important;
+  height: auto;
+  align-items: center;
+}
+
+.leftNav button img {
+  padding: 0%;
+  margin-right: 12px;
+  margin-left: 8px;
+  width: 24px;
+  margin-bottom: 0px;
+}
+
+.border {
+  border-color: #00000026;
+  border-bottom-style: solid;
+  border-width: 2px;
+}
+
+.btn {
+  border-color: transparent !important;
+  margin-bottom: 65px !important;
+  font-weight: bold !important;
+  color: white !important;
+}
+
+.btn:hover {
+  border: 0px solid transparent !important;
+  background-color: transparent !important;
+}
+
+.imgText {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+
+.imgText:hover {
+  padding-left: 3px;
+  transition: .4s;
+}
+
+.imgText p {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+
+.subBtn {
+  border-color: transparent !important;
+  font-weight: bold !important;
+  height: 74px !important;
+  color: white !important;
+  background-color: #212121 !important;
+  border-radius: 0px !important;
+}
+
+.subBtn:hover {
+  border: 0px solid transparent !important;
+  background-color: transparent !important;
+  color: #ffffff96 !important;
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .leftNav {
+    max-width: 90px;
+    height: 101%;
+  }
+
+  .leftNav button img {
+    margin-left: 11px;
+  }
+
+  .imgText p {
+    display: none;
+  }
+
+  .subBtn {
+    border-radius: 0px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .leftNav {
+    overflow: hidden;
+    flex-direction: row;
+    z-index: 1;
+    max-width: 100%;
+    width: 100%;
+    height: 38px;
+    bottom: 0;
+  }
+
+  #bgImg {
+    display: none;
+  }
+
+  .leftNav button img {
+    margin-left: 11px;
+  }
+
+  .leftNav {
+    min-width: 250px;
+    min-width: 250px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  .leftNav a {
+    height: 40px;
+    width: 83px;
+}
+
+  .imgText {
+    flex-direction: column;
+  }
+
+  .imgText p {
+    display: none;
+  }
+
+  .subPanelMateriel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+  .border {
+    width: auto;
+  }
+
+  .subBtn {
+    border-radius: 0px !important;
+  }
+}

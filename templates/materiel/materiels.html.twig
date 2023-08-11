@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}DigitLight - {{page}}{% endblock %}
+
+		{% block stylesheets %}
+			{{ encore_entry_link_tags('css/global') }}
+			{{ encore_entry_link_tags('css/accueil') }}
+			{{ encore_entry_link_tags('css/header') }}
+			{{ encore_entry_link_tags('css/navbar') }}
+			{{ encore_entry_link_tags('css/itemStats') }}
+		{% endblock %}
+
+{% block body %}
+
+{% if page in [null, "", 'Accueil'] %}
+
+<div {{ react_component('accueil', {'appUserLogin': app.user.login, 'appUserRole': app.user.roles} ) }}></div>
+{% endif %}
+
+{% if page == "Réseau" %}
+<div {{ react_component('materiel/reseau', {'appUserLogin': app.user.login, 'appUserRole': app.user.roles}) }}></div>
+{% endif %}
+
+{% if page == "Téléphonique" %}
+<div {{ react_component('materiel/telephonique', {'appUserLogin': app.user.login, 'appUserRole': app.user.roles}) }}></div>
+{% endif %}
+
+{% if page == "Desktop" %}
+<div {{ react_component('materiel/desktop', {'appUserLogin': app.user.login, 'appUserRole': app.user.roles}) }}></div>
+{% endif %}
+
+{% if page == "Réunion" %}
+<div {{ react_component('materiel/reunion', {'appUserLogin': app.user.login, 'appUserRole': app.user.roles}) }}></div>
+{% endif %}
+
+{% endblock %}

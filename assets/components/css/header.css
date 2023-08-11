@@ -1,0 +1,135 @@
+/*             HEADER            */
+
+.panelHeader {
+  box-shadow: 0px 0px 20px 20px #00000014;
+  height: 58px;
+  top: 0;
+  display: flex;
+  background-color: var(--defaut-header-color);
+  padding-left: 8px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.panelHeader h1 {
+  font-size: 1vw;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: monospace;
+  color: #ffffffa8;
+  display: flex;
+  align-items: center;
+  margin-left: 64px;
+  flex-direction: row;
+}
+
+.panelHeader a {
+  font-size: 1vw;
+  text-align: center;
+  font-family: monospace;
+  color: #fffffff6;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+/* Breadcrumb */
+
+ul.breadcrumb {
+  display: flex;
+  list-style: none;
+  width: auto;
+  margin-left: 24px;
+  flex-direction: row;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+ul.breadcrumb li {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  font-family: 'Maven Pro', sans-serif;
+  text-decoration: none;
+  font-size: medium;
+  justify-content: center;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 9px;
+  -webkit-font-smoothing: antialiased;
+  content: ">";
+  font-size: 0.6em;
+  margin: 13px;
+}
+
+ul.breadcrumb li a {
+  font-family: 'Maven Pro', sans-serif;
+  display: flex;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: medium;
+  justify-content: center;
+}
+
+ul.breadcrumb li span {
+  width: 150px;
+  font-family: 'Maven Pro', sans-serif;
+  display: flex;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: medium;
+  align-items: center;
+}
+
+ul.breadcrumb li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.WelcomeMSG {
+  display: flex;
+  position: relative;
+  margin: 0.5rem 0px;
+  width: auto;
+  flex-direction: row;
+  align-items: center;
+}
+
+.WelcomeMSG span {
+  display: flex;
+  position: absolute;
+  right: 102px;
+  white-space:nowrap;
+  font-size: 12px;
+  text-align: center;
+  top: 21px;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: bold;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+/* Breadcrumb end */
+
+
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {}
+
+/* Mobile */
+@media (max-width: 700px) {
+  ul.breadcrumb li a {
+    font-size: 13px;
+  }
+
+  ul.breadcrumb li span {
+    font-size: 13px;
+  }
+
+  .WelcomeMSG span {
+    display: none;
+  }
+}
